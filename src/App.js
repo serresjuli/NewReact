@@ -12,10 +12,10 @@ export const App = () => {
         <Route exact path='/'>
           <ItemListContainer/>
         </Route>
-        <Route exact path='category/:id'>
+        <Route exact path='/category/:id'>
           <ItemListContainer/>
         </Route>
-        <Route exact path='item/:id'>
+        <Route exact path='/item/:id'>
           <ItemDetailContainer/>
         </Route>
       </Switch>

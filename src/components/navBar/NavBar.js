@@ -17,7 +17,7 @@ export const NavBar = () =>{
         <section className="homelist">
             <ul className="nav"> 
                 {categories.map((category)=>(
-                    <NavLink to={`/category/${category}`}>
+                    <NavLink to={`/category/${category.toLowerCase()}`}>
                         <li>{category}</li>
                     </NavLink>
                 ))}
