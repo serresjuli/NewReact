@@ -29,9 +29,10 @@ export const ItemCount = ({initial, stock, onAdd})=>{
             </div>
             <br></br>
             <div className='btnAgregarCarrito'> 
-                <button className='btnSumarCarrito' onClick={onAdd} disabled={sumaStock === 0 ? true : false } > Agregar al carrito </button>
+                <button className='btnSumarCarrito' onClick={()=>onAdd(contador)} disabled={sumaStock === 0 ? true : false } >
+                    Agregar al carrito
+                </button>
             </div>
-        
         </section>
         </Fragment>
     )
